@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 
-function PostDetail() {
+function PostDetail({ posts }) {
   const { id } = useParams();
-  const [post, setPost] = useState({});
-
-  useEffect(() => {
-    setPost({ id: id, title: 'Example Title', content: 'Example content for this post' });
-  }, [id]);
+  // Find the post with the matching id
+  const post = posts.find(p => p.id === parseInt(id, 10)) || {};
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-4">
