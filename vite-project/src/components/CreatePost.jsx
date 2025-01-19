@@ -38,5 +38,4 @@ function CreatePost({ addPost }) {
 </>
   );
 }
-
 export default CreatePost;
