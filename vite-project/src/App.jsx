@@ -29,6 +29,7 @@ function App() {
             </ul>
           </nav>
         </header>
+        <button className='text-black border-solid border-2 border-black rounded w-36 h-16 m-auto mt-5 hover:bg-black hover:text-white'><Link to="/create" className="hover:underline">Create Post</Link></button>
         <main className="container mx-auto p-4 flex-grow">
           <Routes>
             <Route path="/" element={<Home posts={posts} />} />
@@ -37,6 +38,7 @@ function App() {
             <Route path="/about" element={<About />} />
           </Routes>
         </main>
+
         {/* Footer */}
       </div>
     </Router>
