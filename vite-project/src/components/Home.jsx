@@ -11,6 +11,7 @@ function Home({ posts }) {
             <p className="text-gray-700">{post.content.slice(0, 50)}...</p>
           </div>
         </div>
+
       ))}
     </div>
   );
